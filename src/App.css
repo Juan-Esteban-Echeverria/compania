@@ -1,5 +1,142 @@
 .fotocarrusel {
-    object-fit: cover;
+    object-fit:cover;
     min-height: 33em;
     max-height: 43em;
 }
+
+.fotoperfil {
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 33em;
+    max-height: 100%;
+}
+
+.fotoperfil2 {
+    object-fit: cover;
+    max-width: 50%;
+    min-height: 33em;
+    max-height: 100%;
+}
+
+.fotocarta {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@keyframes test {
+    from {filter: opacity(100%);}
+    to {filter: opacity(50%);}
+}
+
+.fotocarta:hover {
+    animation-name: test;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.logo {
+    filter: contrast(0%);
+    block-size: 15em;
+}
+
+.logo-contacto {
+    filter: contrast(50%);
+    block-size: 10em;
+}
+
+.icono {
+    block-size: 5em;
+}
+
+.icono:hover{
+   background-color: white;
+   filter: invert();
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.foto-obra{
+    object-fit:cover;
+    object-position: 0px -400px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 20em;
+}
+
+.banner-nosotros{
+    object-fit:cover;
+    object-position: 0px -440px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 20em;
+}
+
+.ojos-nosotros{
+    object-fit:cover;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 5em;
+}
+
+.ojo1{
+    object-position: 0px -240px;
+}
+
+.ojo2{
+    object-position: 0px -300px;
+}
+
+.ojo3{
+    object-position: 0px -315px;
+}
+
+.shadow{
+    text-shadow: 1px 1px 2px pink;
+}
+
+.shadow2{
+    text-shadow: 10px 1px 10px black;
+}
+
+.fotos-obra {
+    float: left;
+    width:  10em;
+    height: 18em;
+    object-fit: cover;
+}
+
+.fotos-trabajos {
+    float: left;
+    width:  10em;
+    height: 25em;
+    object-fit: cover;
+}
+
+.mini-obra{
+    border-radius: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .foto-obra{
+        object-position: center;
+    }
+    .banner-nosotros{
+        object-position: center;
+    }
+    .ojo1{
+        object-position: 0px -110px;
+    }
+    
+    .ojo2{
+        object-position: 0px -160px;
+    }
+    
+    .ojo3{
+        object-position: 0px -170px;
+    }
+    .fotoperfil2{
+        display: none;
+    }
+
+}
+

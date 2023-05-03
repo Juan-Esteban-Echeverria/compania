@@ -10,7 +10,10 @@ function App() {
   return (
     <div className="App">
       <Navegacion/>
-      <Carrusel/>
+      <Carrusel 
+        foto1={require('./img/banner1.JPEG')}
+        foto2={require('./img/banner2.jpg')}
+        foto3={require('./img/banner3.jpg')}/>
       <Footer/>
     </div>
   );

@@ -1,43 +1,42 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-function Carrusel() {
+function Carrusel(props) {
   return (
     <Carousel className='carrusel'>
       <Carousel.Item>
-        <img
-          className="d-bloc w-100 fotocarrusel"
-          src={require("../img/foto 1.png")}
-          alt="First slide"
-        />
+        <a href='/Breve-Eternidad'>
+          <img
+            className="d-bloc w-100 fotocarrusel"
+            src={props.foto1}
+            alt="First slide"
+          />
+        </a>
         <Carousel.Caption>
-          <h3>Titulo Obra 1</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className='shadow'>Breve Eternidad</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100 fotocarrusel"
-          src={require("../img/foto 2.png")}
-          alt="Second slide"
-        />
-
+      <a href='/Breve-Eternidad'>
+          <img
+            className="d-bloc w-100 fotocarrusel"
+            src={props.foto2}
+            alt="First slide"
+          />
+        </a>
         <Carousel.Caption>
-          <h3>Titulo Obra 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className='shadow'>Breve Eternidad</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100 fotocarrusel"
-          src={require("../img/foto 3.png")}
-          alt="Third slide"
-        />
-
+      <a href='/Breve-Eternidad'>
+          <img
+            className="d-bloc w-100 fotocarrusel"
+            src={props.foto3}
+            alt="First slide"
+          />
+        </a>
         <Carousel.Caption>
-          <h3>Titulo Obra 3</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3 className='shadow'>Breve Eternidad</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

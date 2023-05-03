@@ -1,4 +1,7 @@
 html, body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10em;
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
   margin: 0;
